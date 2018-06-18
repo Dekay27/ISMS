@@ -27,7 +27,7 @@
             android:name=".login"
             android:label="@string/title_activity_login" />
         <activity android:name=".ward_choice" />
-        <activity android:name=".check_fees"></activity>
+        <activity android:name=".check_fees" />
     </application>
 
 </manifest>
