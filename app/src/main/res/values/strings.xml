@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ISMS</string>
+    <string name="app_name">GCIHS</string>
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
@@ -14,5 +14,17 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <!-- User written strings-->
     <string name="gcihs">GHANA CHRISTIAN  INTERNATIONAL  HIGH SCHOOL</string>
+    <string name="phone_number">Phone number</string>
+    <string name="four_digit_code">4-digit code</string>
+    <string name="next_button">NEXT</string>
+    <string name="login">Login</string>
+    <string name="back">back</string>
+    <string name="parent">PARENT</string>
+    <string name="student">STUDENT</string>
+    <string name="staff">STAFF</string>
+    <string name="please_select_one">Please select one\nof the following</string>
+    <string name="extra_text"> more tries left</string>
 </resources>

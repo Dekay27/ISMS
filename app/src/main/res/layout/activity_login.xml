@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ConstraintLayout"
+    android:id="@+id/linear2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:background="@color/white"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -15,50 +15,105 @@
     <!-- Login progress -->
 
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="277dp"
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="98dp" />
+        android:layout_marginTop="40dp"
+        card_view:cardCornerRadius="4dp">
 
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="278dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberPassword"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="229dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical">
 
-    <TextView
-        android:id="@+id/textView2"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tries"/>
+
+            <TextView
+                android:id="@+id/phone_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/average_sans"
+                android:text="@string/phone_number"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="Enter your phone number"
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:ems="10"
+                android:background="@drawable/et_bg"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/four_digit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/average_sans"
+                android:text="@string/four_digit_code"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="Enter your 4-digit pin"
+                android:id="@+id/four_digit_code"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:ems="10"
+                android:background="@drawable/et_bg"
+                android:inputType="numberPassword"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Phone number"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="62dp" />
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        card_view:cardCornerRadius="4dp">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="4-digit code"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="194dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_dark"
-        android:text="Next"
-        android:textColor="@android:color/white"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="339dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-</android.support.constraint.ConstraintLayout>
+            <Button
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/average_sans"
+                android:text="Forgot password?"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:fontFamily="@font/average_sans"
+                android:text="@string/next_button"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
