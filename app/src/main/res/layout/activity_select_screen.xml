@@ -20,7 +20,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/please_select_one"
-            android:gravity="center_horizontal"
             android:textSize="20sp"
             tools:fontFamily="@font/average_sans" />
     </LinearLayout>
