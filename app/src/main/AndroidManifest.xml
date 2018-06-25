@@ -14,7 +14,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light">
-
         // Main Activity
         <activity
             android:name=".MainActivity"
@@ -26,37 +25,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         // Select Screen
         <activity
             android:name=".selectScreen"
-            android:parentActivityName="com.apple.dekay.isms.MainActivity">
+            android:parentActivityName=".MainActivity">
 
-        <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.apple.dekay.isms.MainActivity" />
         </activity>
-
         // Dashboard
         <activity android:name=".dashboard" />
-
         // Login Screen
         <activity
             android:name=".login"
-            android:label="@string/title_activity_login">
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.Design.Light">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.apple.dekay.isms.selectScreen" />
         </activity>
-
         // Ward Choice
         <activity android:name=".ward_choice" />
-
         Check Fees
         <activity android:name=".check_fees" />
-
+        <activity
+            android:name=".bottom_nav"
+            android:label="@string/title_activity_bottom_nav" />
+        <activity android:name=".check_results" />
+        <activity android:name=".course_material"></activity>
     </application>
 
 </manifest>
-

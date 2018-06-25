@@ -8,5 +8,6 @@
     <color name="white">#ffffff</color>
     <color name="gradStart">#303FFF</color>
     <color name="off_white">#F3F0EF</color>
-
+    <color name="pinky_red">#e6005c</color>
+    <color name="light_blue">#0099cc</color>
 </resources>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/select_screen"
-    android:background="@color/off_white"
+    android:background="@color/white"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -33,6 +33,7 @@
         android:paddingTop="50dp"
         android:paddingStart="50dp"
         android:paddingLeft="50dp"
+        android:paddingEnd="50dp"
         android:layout_gravity="center_horizontal"
         android:gravity="center_vertical"
         app:layout_constraintEnd_toEndOf="@color/off_white">
@@ -47,7 +48,8 @@
             android:onClick="parentClick"
             android:text="@string/parent"
             android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:backgroundTint="@color/pinky_red"/>
 
 
         <Button
@@ -58,8 +60,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:text="@string/student"
+            android:onClick="studentClick"
             android:textColor="@android:color/white"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:backgroundTint="@color/pinky_red"/>
 
         <Button
             android:id="@+id/staff"
@@ -69,8 +73,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:text="@string/staff"
+            android:onClick="staffClick"
             android:textColor="@android:color/white"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:backgroundTint="@color/pinky_red"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -2,25 +2,73 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linear2"
+    android:background="@color/off_white"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".login">
 
     <!-- Login progress -->
 
 
-    <android.support.v7.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view1"
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        card_view:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:textAlignment="gravity">
+
+                <TextView
+                    android:id="@+id/tries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/phone_number_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/average_sans"
+                    android:text="@string/phone_number"
+                    android:textSize="24sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/enter_your_phone_number"
+                    android:inputType="phone"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         card_view:cardCornerRadius="4dp">
 
         <LinearLayout
@@ -31,89 +79,58 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/tries"/>
-
-            <TextView
-                android:id="@+id/phone_number_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/average_sans"
-                android:text="@string/phone_number"
-                android:textSize="18sp" />
-
-            <EditText
-                android:hint="Enter your phone number"
-                android:id="@+id/phone_number"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:ems="10"
-                android:background="@drawable/et_bg"
-                android:inputType="phone" />
-
-            <TextView
                 android:id="@+id/four_digit_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/average_sans"
                 android:text="@string/four_digit_code"
-                android:textSize="18sp" />
+                android:textSize="24sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
 
             <EditText
-                android:hint="Enter your 4-digit pin"
+                android:hint="@string/enter_your_4_digit_pin"
                 android:id="@+id/four_digit_code"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
                 android:ems="10"
-                android:background="@drawable/et_bg"
-                android:inputType="numberPassword"/>
+                android:paddingBottom="5dp"
+                android:inputType="numberPassword"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"/>
 
         </LinearLayout>
-
     </android.support.v7.widget.CardView>
 
 
 
-    <android.support.v7.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="200dp"
-        card_view:cardCornerRadius="4dp">
 
-
-        <LinearLayout
+        <Button
+            android:id="@+id/forgot_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:textAlignment="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#e6005c"
+            android:fontFamily="@font/average_sans"
+            android:text="@string/forgot_password"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
-            <Button
-                android:id="@+id/forgot_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/average_sans"
-                android:text="Forgot password?"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
-
-
-            <Button
-                android:id="@+id/next_button"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
-                android:fontFamily="@font/average_sans"
-                android:text="@string/next_button"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
-
-
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
+        <Button
+            android:id="@+id/next_button"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e6005c"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/average_sans"
+            android:text="@string/next_button"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
 
 </LinearLayout>

@@ -25,21 +25,6 @@ public class selectScreen extends AppCompatActivity {
         student = findViewById(R.id.student);
         staff = findViewById(R.id.staff);
 
-        student.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),
-                        "Page Not Available",Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        staff.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),
-                        "Page Not Available",Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
     /** Called when the user taps the Send button */
@@ -49,7 +34,23 @@ public class selectScreen extends AppCompatActivity {
                 "Welcome",Toast.LENGTH_SHORT).show();
         Intent loginIntent = new Intent(selectScreen.this, login.class);
         startActivity(loginIntent);
-        }
+    }
+
+    public void studentClick(View view) {
+        // Do something in response to button
+        Toast.makeText(getApplicationContext(),
+                "Welcome",Toast.LENGTH_SHORT).show();
+        Intent loginIntent = new Intent(selectScreen.this, login.class);
+        startActivity(loginIntent);
+    }
+
+    public void staffClick(View view) {
+        // Do something in response to button
+        Toast.makeText(getApplicationContext(),
+                "Welcome",Toast.LENGTH_SHORT).show();
+        Intent loginIntent = new Intent(selectScreen.this, login.class);
+        startActivity(loginIntent);
+    }
 
 
 }

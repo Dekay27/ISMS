@@ -26,5 +26,15 @@
     <string name="student">STUDENT</string>
     <string name="staff">STAFF</string>
     <string name="please_select_one">Please select one\nof the following</string>
-    <string name="extra_text"> more tries left</string>
+    <string name="extra_text">more tries left</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="enter_your_4_digit_pin">Enter your 4-digit pin</string>
+    <string name="next_small">Next</string>
+    <string name="title_activity_bottom_nav">bottom_nav</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="send_message">Send message</string>
+    <string name="logout">Logout</string>
 </resources>
