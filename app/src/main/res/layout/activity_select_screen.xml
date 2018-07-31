@@ -30,7 +30,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingTop="50dp"
+        android:paddingTop="25dp"
         android:paddingStart="50dp"
         android:paddingLeft="50dp"
         android:paddingEnd="50dp"
@@ -45,11 +45,11 @@
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
             android:background="@android:color/holo_blue_dark"
+            android:backgroundTint="@color/pinky_red"
             android:onClick="parentClick"
             android:text="@string/parent"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:backgroundTint="@color/pinky_red"/>
+            android:textSize="18sp" />
 
 
         <Button

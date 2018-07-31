@@ -50,7 +50,7 @@ public class dashboard extends AppCompatActivity {
         // Do something in response to button
         Toast.makeText(getApplicationContext(),
                 "Welcome",Toast.LENGTH_SHORT).show();
-        Intent loginIntent = new Intent(dashboard.this, login.class);
+        Intent loginIntent = new Intent(dashboard.this, course_material.class);
         startActivity(loginIntent);
     }
 
@@ -59,7 +59,7 @@ public class dashboard extends AppCompatActivity {
         // Do something in response to button
         Toast.makeText(getApplicationContext(),
                 "Welcome",Toast.LENGTH_SHORT).show();
-        Intent loginIntent = new Intent(dashboard.this, login.class);
+        Intent loginIntent = new Intent(dashboard.this, academic_calendar.class);
         startActivity(loginIntent);
     }
 
@@ -68,7 +68,7 @@ public class dashboard extends AppCompatActivity {
         // Do something in response to button
         Toast.makeText(getApplicationContext(),
                 "Welcome",Toast.LENGTH_SHORT).show();
-        Intent loginIntent = new Intent(dashboard.this, login.class);
+        Intent loginIntent = new Intent(dashboard.this, send_message.class);
         startActivity(loginIntent);
     }
 

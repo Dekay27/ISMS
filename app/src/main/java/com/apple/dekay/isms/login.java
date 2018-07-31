@@ -48,9 +48,9 @@ public class login extends AppCompatActivity {
                             tx1.setVisibility(View.VISIBLE);
                     counter--;
                     if(counter!=0){
-                        tx1.setText(Integer.toString(counter) + " " + getString(R.string.extra_text));
+                        tx1.setText(Integer.toString(counter) + getString(R.string.extra_text) );
                     }else{
-                        tx1.setText("No" + " " + getString(R.string.extra_text));
+                        tx1.setText(Integer.toString(counter) + getString(R.string.extra_text));
                     }
 
 
